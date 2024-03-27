@@ -31,7 +31,7 @@
    <div class="cstaff">
      <h2>Administración</h2>
    </div>
-   <a href="" class="stiframe"><i class="fi fi-ss-crown"></i> <span>da click aquí para conocer al staff. </span></a>
+   <a href="/"><div class="stiframe"><i class="fi fi-ss-crown"></i> <span>da click aquí para conocer al staff. </span></div></a>
    
 </div>
 <!-- END switch_login_small -->  
@@ -138,4 +138,28 @@
     color: var(--ctexto1);
 }  
    
+.stiframe { 
+      margin: 10px;
+    background: red;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    height: 100px;
+    width: -webkit-fill-available;
+  }  
+  
+.stiframe i {
+background: none;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  
+.stiframe span {
+      text-transform: lowercase;
+    font-size: 10px;
+    width: 100px;
+}
+  }  
+  
 </style>
