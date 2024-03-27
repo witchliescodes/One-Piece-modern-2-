@@ -1,29 +1,32 @@
 <div class="moverconectados">
 <!-- BEGIN switch_login_small -->
-  <h1>¿Vamos a rolear?</h1>
+ <div class="cajaconectarse"> 
+  <h2>CONECTARSE</h2>
   <form action="{S_LOGIN_ACTION}" method="post">
  <fieldset class="fields1">
-		<dl>
-			<dt><label for="username">{L_USERNAME}:</label></dt>
-			<dd><input type="text" tabindex="1" name="username" id="username" size="20" maxlength="40" value="{USERNAME}" class="inputbox autowidth" /></dd>
-		</dl>
-		<dl>
-			<dt><label for="password">{L_PASSWORD}:</label></dt>
-			<dd><input type="password" tabindex="2" id="password" name="password" size="20" maxlength="25" class="inputbox autowidth" /></dd>
-			<dd><a href="{U_SEND_PASSWORD}" rel="nofollow">{L_SEND_PASSWORD}</a></dd>
-		</dl>
-		<dl>
-			<dd>
-				<label for="autologin" style="display:inline;white-space:normal;"><input type="checkbox" name="autologin" id="autologin" tabindex="4" class="checkbox" {AUTOLOGIN_CHECKED} /> {L_AUTO_LOGIN}</label>
-			</dd>
-		</dl>
-		<dl>
-			<dt>&nbsp;</dt>
-			<dd><input type="submit" name="login" tabindex="6" value="{L_LOGIN}" class="button1" /></dd>
-		</dl>
+   
+ <div class="boxconect">
+   	<label for="username">{L_USERNAME}</label>
+   	<input type="text" tabindex="1" name="username" id="username" size="20" maxlength="40" value="{USERNAME}" class="inputbox autowidth" />		
+ </div>
+		
+ <div class="boxconect">
+   	<label for="password">{L_PASSWORD}</label>
+   	<input type="password" tabindex="2" id="password" name="password" size="20" maxlength="25" class="inputbox autowidth" />
+   	<a href="{U_SEND_PASSWORD}" rel="nofollow">{L_SEND_PASSWORD}</a>	
+ </div>
+			
+
+ <div class="boxlogin">
+	<label for="autologin" style="display:inline;white-space:normal;"><input type="checkbox" name="autologin" id="autologin" tabindex="4" class="checkbox" {AUTOLOGIN_CHECKED} /> {L_AUTO_LOGIN}</label>
+	<input type="submit" name="login" tabindex="6" value="{L_LOGIN}" class="button1" />
+ </div>  
+   
+			
+		
    </fieldset>
 	</form>
-
+</div>
 <!-- END switch_login_small -->  
   
  <!-- BEGIN switch_profile --> 
@@ -44,3 +47,35 @@
   </div>
  <!-- END switch_profile --> 
 </div>
+
+<style>
+:root {
+  --fondo1: #080311; 
+  --fondo2: #100623; 
+  --ftrans: ;
+  --ftrans2: ;
+  --acent1: #944BBB;
+  --acent2: #AA7BC3;
+  --acent3: #C5A5D6;
+  --acent4: #E4D5EC;
+  --ctexto1: #d5d0d7; 
+  --ctexto2: #080311;
+  --titulo: 'Agreloy';
+  --subtitulo: 'Lemon Milk';
+  --texto1: 400 13px 'Montserrat';
+  --fondodeep: url('https://images2.imgbox.com/4b/ec/luEWdI6Z_o.png');
+  --imgfondo1: url('https://images2.imgbox.com/53/19/Kh0IQm9c_o.png');
+  }   
+  
+  /**CONECTARSE**/
+.cajaconectarse h2 {
+  text-transform: uppercase; 
+  font-size: 20px; 
+  letter-spacing: 1px; 
+  border-left: 5px solid var(--acent1); 
+  padding: 15px; 
+  font-family: var(--subtitulo);
+  }
+  
+  
+</style>
