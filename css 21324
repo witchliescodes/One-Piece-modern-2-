@@ -1,1 +1,57 @@
 
+//**SKIN CODIFICADO POR THE WITCH LIES**//
+#criteo_sticky {display:none;}
+body#phpbb {
+    background-size: cover!important;
+    background-position: center;
+    color: var(--ctexto1);
+    padding: 0!important;
+    margin: 0!important;
+    background: var(--fondodeep);
+    font-size: calc(0.3vw + 0.3vh + 0.5vmin);
+}
+  
+a { color: var(--ctexto1); transition: all 300ms;}
+
+a:hover{
+ text-decoration:none!important;
+  color: var(--acent1);
+}  
+/**SELECCION**/
+*::selection{
+ background:var(--acent1);
+ color: var(--ctexto1);
+}
+
+/**SCROLLBAR**/
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--fondo2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--acent2);
+      border-radius: 10px;
+}
+
+* { scrollbar-color: var(--acent1) #944BBB; }
+
+/**TITULOS Y FUENTES**/
+h1 {
+  font-size: 30px;
+  font-family: var(--titulo);
+  }  
+.h2, .h3 {
+font-size: 20px;
+  font-family: var(--subtitulo);
+}
+
+/**FONT'S**/
+@font-face { font-family: 'Agreloy'; font-style: normal; src: url('https://dl.dropbox.com/scl/fi/hvdasy612uuqoyfz95lyc/Agreloy.otf?rlkey=3nmvl4rhg2xn7ev4sask5es7i'); format('truetype'); }
+@font-face { font-family: 'Lemon Milk'; font-style: normal; src: url('https://dl.dropbox.com/scl/fi/m6bysoxeokir97mubh2al/LEMONMILK-Bold.otf?rlkey=r4vdah64dvfkm2d9ym9swiocw'); format('truetype'); }
