@@ -6,14 +6,14 @@
  <fieldset class="fields1">
    
  <div class="boxconect">
-   	<label for="username">{L_USERNAME}</label>
+   	<label for="username" class="cnombri">{L_USERNAME}</label>
    	<input type="text" tabindex="1" name="username" id="username" size="20" maxlength="40" value="{USERNAME}" class="inputbox autowidth" />		
  </div>
 		
  <div class="boxconect">
-   	<label for="password">{L_PASSWORD}</label>
+   	<label for="password" class="cnombri">{L_PASSWORD}</label>
    	<input type="password" tabindex="2" id="password" name="password" size="20" maxlength="25" class="inputbox autowidth" />
-   	<a href="{U_SEND_PASSWORD}" rel="nofollow">{L_SEND_PASSWORD}</a>	
+   	<a href="{U_SEND_PASSWORD}" rel="nofollow" class="linkrecuper">{L_SEND_PASSWORD}</a>	
  </div>
 			
 
@@ -76,6 +76,13 @@
   padding: 15px; 
   font-family: var(--subtitulo);
   }
+  
+.boxconect, .boxlogin {
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: flex-start; 
+  flex-flow: column; 
+  } 
   
   
 </style>
