@@ -62,6 +62,7 @@
   --ctexto2: #080311;
   --titulo: 'Agreloy';
   --subtitulo: 'Lemon Milk';
+  --text: 'Montserrat';
   --texto1: 400 13px 'Montserrat';
   --fondodeep: url('https://images2.imgbox.com/4b/ec/luEWdI6Z_o.png');
   --imgfondo1: url('https://images2.imgbox.com/53/19/Kh0IQm9c_o.png');
@@ -84,5 +85,16 @@
   flex-flow: column; 
   } 
   
+.cnombri {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px;
+}
   
+.boxconect input {
+  border: none; 
+  background: var(--fondo1); 
+  border-radius: 30px; 
+  }  
 </style>
