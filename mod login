@@ -27,6 +27,12 @@
 		
    </fieldset>
 	</form>
+   
+   <div class="cstaff">
+     <h2>Administración</h2>
+   </div>
+   <a href="" class="stiframe"><i class="fi fi-ss-crown"></i> <span>da click aquí para conocer al staff. </span></a>
+   
 </div>
 <!-- END switch_login_small -->  
   
