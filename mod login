@@ -89,12 +89,23 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin: 10px;
+    margin: 11px 0 13px 12px;
+    padding: 0 10px 0 10px;
+    z-index: 9;
+    text-shadow: 1px 0px 0px var(--fondo1);
+    background: var(--acent1);
+    border-radius: 10px;
 }
   
 .boxconect input {
-  border: none; 
-  background: var(--fondo1); 
-  border-radius: 30px; 
-  }  
+    border: none;
+    background: var(--fondo1);
+    border-radius: 30px;
+    outline: 1px solid var(--acent1);
+    outline-offset: 10px;
+    margin: -9px 0px 12px 10px;
+    width: 95% !important;
+    color: var(--ctexto1);
+    font-size: 10px;
+} 
 </style>
