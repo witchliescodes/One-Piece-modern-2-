@@ -15,6 +15,9 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>  
 <link rel="stylesheet" href="https://dl.dropbox.com/scl/fi/hvdasy612uuqoyfz95lyc/Agreloy.otf?rlkey=3nmvl4rhg2xn7ev4sask5es7i" />  
 <link href="https://dl.dropbox.com/scl/fi/m6bysoxeokir97mubh2al/LEMONMILK-Bold.otf?rlkey=r4vdah64dvfkm2d9ym9swiocw" rel="stylesheet" />  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <script src="//pull.cappuccicons.com/cpf.js"></script>
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'/>  
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-straight/css/uicons-bold-straight.css'/>
@@ -501,6 +504,7 @@ closeMenuButton.addEventListener("click", function() {
   --ctexto2: #080311;
   --titulo: 'Agreloy';
   --subtitulo: 'Lemon Milk';
+  --text: 'Montserrat';
   --texto1: 400 13px 'Montserrat';
   --fondodeep: url('https://images2.imgbox.com/4b/ec/luEWdI6Z_o.png');
   --imgfondo1: url('https://images2.imgbox.com/53/19/Kh0IQm9c_o.png');
@@ -683,17 +687,17 @@ button.btn {
 }
 
 .menu {
-  position: fixed;
-  top: 0;
-  left: -400px;
-  width: 400px;
-  height: 100%;
-   background-color: var(--fondo1);
-   background-image: linear-gradient(160deg, var(--fondo2) 70%, var(--acent1) 100%);
-  padding: 20px;
-  box-sizing: border-box;
-  transition: left 400ms ease;
-  z-index: 99;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: var(--acent1);
+    background-image: linear-gradient(62deg, var(--fondo2) 0%, var(--acent2) 100%);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 400ms ease;
+    z-index: 99;
 }
 
 .menu ul {
