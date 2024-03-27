@@ -1,0 +1,46 @@
+<div class="moverconectados">
+<!-- BEGIN switch_login_small -->
+  <h1>¿Vamos a rolear?</h1>
+  <form action="{S_LOGIN_ACTION}" method="post">
+ <fieldset class="fields1">
+		<dl>
+			<dt><label for="username">{L_USERNAME}:</label></dt>
+			<dd><input type="text" tabindex="1" name="username" id="username" size="20" maxlength="40" value="{USERNAME}" class="inputbox autowidth" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="password">{L_PASSWORD}:</label></dt>
+			<dd><input type="password" tabindex="2" id="password" name="password" size="20" maxlength="25" class="inputbox autowidth" /></dd>
+			<dd><a href="{U_SEND_PASSWORD}" rel="nofollow">{L_SEND_PASSWORD}</a></dd>
+		</dl>
+		<dl>
+			<dd>
+				<label for="autologin" style="display:inline;white-space:normal;"><input type="checkbox" name="autologin" id="autologin" tabindex="4" class="checkbox" {AUTOLOGIN_CHECKED} /> {L_AUTO_LOGIN}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>&nbsp;</dt>
+			<dd><input type="submit" name="login" tabindex="6" value="{L_LOGIN}" class="button1" /></dd>
+		</dl>
+   </fieldset>
+	</form>
+
+<!-- END switch_login_small -->  
+  
+ <!-- BEGIN switch_profile --> 
+  
+  <div class="conecticut">
+    <p>Bienvenid@...</p> 
+  </div>
+  <div class="avaconec">
+  {USERNAME_AVATAR}
+    <div class="nomavatar">{USERNAME}</div>
+   <a href="{U_PROFILE}" class="avaperfil"><i class="fi fi-rr-user"></i></a>
+  </div>
+  
+  <div class="datosconect">
+    <p><i class="fi fi-rr-messages"></i> <span> {NB_MESSAGES}</span></p>
+    <p><i class="fi fi-rr-comment"></i><span>{NB_PM_READ}</span></p>
+    <p><i class="fi fi-rr-envelope-dot"></i><span>{NB_PM_UNREAD}</span></p>
+  </div>
+ <!-- END switch_profile --> 
+</div>
