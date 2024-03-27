@@ -262,7 +262,7 @@
       <i class="fas fa-bars"></i>
       </button>
         <div id="menu" class="menu">
-    <button id="close-menu"><i class="fas fa-times"></i></button> <!-- Icono de cruz -->
+    <button id="close-menu"><i class="fas fa-times"></i> cerrar</button> <!-- Icono de cruz -->
           <div class="conectar"></div>
   </div>
 <script>
