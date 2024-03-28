@@ -1,6 +1,6 @@
-<div class="moverconectados">
+<div class="moverconectados container-fluid">
 <!-- BEGIN switch_login_small -->
- <div class="cajaconectarse"> 
+ <div class="cajaconectarse col"> 
   <h2>CONECTARSE</h2>
   <form action="{S_LOGIN_ACTION}" method="post">
  <fieldset class="fields1">
@@ -33,19 +33,43 @@
    </div>
    <a href="/"><div class="stiframe"><i class="fi fi-ss-crown"></i> <span>da click aquí para conocer al staff. </span></div></a>
    
+   <div class="catajos">
+     <h2>Atajos <p>de información</p></h2>     
+   </div>
+   <div class="cilink">
+     <a href="/"><i class="fi fi-rr-spade"></i><p>Ambientación</p></a>
+     <a href="/"><i class="fi fi-rr-newspaper"></i><p>Periodico</p></a>
+     <a href="/"><i class="fi fi-ts-list-timeline"></i><p>Cronología</p></a>
+   </div>
+   
+  <div class="cnarrad">
+    <h2>Narrador <p>público</p></h2>
+  </div>
+  <div class="cnarr">
+    <div class="cima">
+    <img src="https://placehold.co/90x90" alt="Narrador público"/>
+    </div>
+    <div class="rnarr">
+      <a href="/" class="tinarr">Monkey D. Luffy</a>
+      <p>¡Usame como tu narrador!</p>
+      <a href="/" class="riko" title="guía sobre narrador público"><i class="fi fi-rr-book-user"></i></a>
+    </div>
+  </div>
+   
 </div>
 <!-- END switch_login_small -->  
   
  <!-- BEGIN switch_profile --> 
-  <div class="conecticut">
+  <div class="conecticut col">
     <h2>Bienvenid@...</h2> 
   </div>
   <div class="avaconec">
+    <div class="avasi">
   {USERNAME_AVATAR}
-    <div class="nomavatar">{USERNAME}</div>
-   <a href="{U_PROFILE}" class="avaperfil"><i class="fi fi-rr-user"></i></a>
+    </div>
   </div>
-  
+   <div class="nomavatar">{USERNAME}</div>
+   <a href="{U_PROFILE}" class="avaperfil"><i class="fi fi-rr-user"></i></a>
   <div class="datosconect">
     <p><i class="fi fi-rr-messages"></i> <span> {NB_MESSAGES}</span></p>
     <p><i class="fi fi-rr-comment"></i><span>{NB_PM_READ}</span></p>
@@ -74,15 +98,21 @@
   --imgfondo1: url('https://images2.imgbox.com/53/19/Kh0IQm9c_o.png');
   }   
   
+  
+.conectar {
+    overflow: auto;
+    height: 100%;
+}
+  
   /**CONECTARSE**/
-.cajaconectarse h2, .conecticut h2{
-  text-transform: uppercase; 
-  font-size: 20px; 
-  letter-spacing: 1px; 
-  border-left: 5px solid var(--acent1); 
-  padding: 15px; 
-  font-family: var(--subtitulo);
-  }
+.cajaconectarse h2, .conecticut h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-left: 5px solid var(--acent1);
+    padding: 0px 0px 0 15px;
+    font-family: var(--subtitulo);
+}
   
 .boxconect, .boxlogin {
   display: flex; 
@@ -105,7 +135,8 @@
   
 .boxconect input {
     border: none;
-    background: var(--fondo1);
+    background-color: var(--fondo2);
+    background-image: linear-gradient(62deg, var(--fondo2) 0%, var(--acent1) 100%) !important;
     border-radius: 30px;
     outline: 1px solid var(--acent1);
     outline-offset: 10px;
@@ -128,7 +159,7 @@
     padding: 5px 10px 5px 10px;
     border: none;
     background-image: none;
-    background-color: var(--acent1);
+    background-color:  var(--acent1);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -138,28 +169,151 @@
     color: var(--ctexto1);
 }  
    
-.stiframe { 
-      margin: 10px;
-    background: red;
+.stiframe {
+    margin: 10px;
     display: flex;
     padding: 20px;
     align-items: center;
+    justify-content: center;
     height: 100px;
     width: -webkit-fill-available;
-  }  
+} 
   
 .stiframe i {
-background: none;
-    font-size: 50px;
-    width: 100px;
-    height: 100px;
-  }
+    background: none !important;
+    font-size: 50px !important;
+    width: 100px !important;
+    height: 100px !important;
+    filter: drop-shadow(0px 0px 26px var(--acent2));
+    text-shadow: 9px 0px var(--acent3);
+    position: relative;
+    left: -10px;
+}
   
 .stiframe span {
-      text-transform: lowercase;
-    font-size: 10px;
-    width: 100px;
+      text-transform: lowercase!important;
+    font-size: 10px!important;
+    width: 100px!important;
 }
+  
+.catajos h2 p, .cnarrad h2 p{
+    font-size: 12px;
+    font-family: var(--text);
+    font-weight: 600;
+    letter-spacing: 10px;
+}  
+  
+.cilink {
+    align-items: center;
+    display: flex;
+    width: -webkit-fill-available;
+    height: auto;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 30px 0 0 0;
+} 
+  
+.cilink a {
+    width: 80px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    transition: all 400ms;
+} 
+  
+.cilink a i {
+    font-size: 30px;
+    background: none;
+    margin: 10px;
+    filter: drop-shadow(0px 0px 40px var(--acent3));
+    text-shadow: 0px 0px 49px var(--acent3);
+}  
+  
+.cilink a p {
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+}  
+  
+  
+.cilink a p {
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+}  
+  
+.cilink a:hover p {
+    background: var(--acent1);
+    color: var(--ctexto1);
+    padding: 5px;
+    border-radius: 10px;
   }  
   
+  .cnarr {
+    margin: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.cima {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    objet-fit: contain;
+}
+  
+.cima img {  
+  width: 90px; 
+  height: 90px; 
+  }  
+  
+  .rnarr {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-flow: column;
+  }
+  
+  .tinarr {
+    font-size: 15px;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: var(--subtitulo);
+    line-height: 23px;
+    text-shadow: 3px -2px 0 var(--acent1);
+  }
+  
+  .rnarr p {
+      font-size: 14px!important;
+  }
+  
+  .ranr .riko {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .riko i {
+    background: none!important;
+    font-size: 20px!important;
+    filter: drop-shadow(0px 0px 10px var(--acent3))!important;
+  }
+  /**CONECTADO**/
+
+.avaconec {
+    width: -webkit-fill-available;
+    padding: 13px;
+    height: 120px;
+    overflow: hidden;
+}
+
 </style>
