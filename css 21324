@@ -1,5 +1,6 @@
-
 //**SKIN CODIFICADO POR THE WITCH LIES**//
+/*Justificado correcto*/
+@supports ((-webkit-hyphens:auto) or (hyphens:auto)) body { text-align: justify; hyphens: auto;}
 #criteo_sticky {display:none;}
 body#phpbb {
     background-size: cover!important;
@@ -11,12 +12,25 @@ body#phpbb {
     font-size: calc(0.3vw + 0.3vh + 0.5vmin);
 }
   
+#wrap {
+    background-color: #08031100;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 70px;
+    backdrop-filter: blur(15px);
+    max-width: 1150px;
+    min-width: 800px;
+}
+
 a { color: var(--ctexto1); transition: all 300ms;}
 
 a:hover{
  text-decoration:none!important;
   color: var(--acent1);
 }  
+
+#content-container #container #left { display: none; } /** PARA QUITAR WIDGETS **/
+
 /**SELECCION**/
 *::selection{
  background:var(--acent1);
@@ -26,7 +40,7 @@ a:hover{
 /**SCROLLBAR**/
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 
 /* Track */
@@ -40,7 +54,6 @@ a:hover{
       border-radius: 10px;
 }
 
-* { scrollbar-color: var(--acent1) #944BBB; }
 
 /**TITULOS Y FUENTES**/
 h1 {
